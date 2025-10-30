@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dofé Dan Ker – Briquettes de bagasse écologiques</title>
+  <meta name="description" content="Briquettes premium de bagasse pour barbecue : longue combustion, faible fumée, made in Réunion. Conformes EN 1860-2 & ISO 17225-6." />
+  <meta property="og:title" content="Dofé Dan Ker – Briquettes de bagasse écologiques" />
+  <meta property="og:description" content="Alternative locale au charbon : zéro déforestation, performances premium, normes FR/UE." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <link rel="icon" href="images/favicon.png" />
+  <!-- Tailwind CSS via CDN (suffisant pour GitHub Pages) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#0B0B0C',
+              gold: '#FFD700',
+              red: '#E11D48'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Effet doré doux sur textes */
+    .gold-gradient { background: linear-gradient(90deg, #FFD700, #ffef9f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .card { @apply rounded-2xl shadow-lg bg-neutral-900/60 border border-white/10; }
+    .badge { @apply text-xs tracking-wide uppercase px-2 py-1 rounded-full bg-brand-red/10 text-brand-red border border-brand-red/30; }
+    /* Animation douce */
+    .fade-in { animation: fade 0.7s ease both; }
+    @keyframes fade { from {opacity:0; transform:translateY(6px)} to {opacity:1; transform:translateY(0)} }
+  </style>
+</head>
+<body class="bg-brand-black text-white selection:bg-brand-red/40">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-black/40 border-b border-white/10">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Logo Dofé Dan Ker" class="h-9 w-auto"/>
+        <span class="font-semibold tracking-wide">Dofé Dan Ker</span>
+      </a>
+      <button id="navBtn" class="lg:hidden p-2 rounded hover:bg-white/10" aria-label="Ouvrir le menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+      </button>
+      <ul id="navLinks" class="hidden lg:flex items-center gap-6 text-sm">
+        <li><a href="#produit" class="hover:text-brand-gold">Produit</a></li>
+        <li><a href="#normes" class="hover:text-brand-gold">Normes</a></li>
+        <li><a href="#comparatif" class="hover:text-brand-gold">Comparatif</a></li>
+        <li><a href="#etiquette" class="hover:text-brand-gold">Étiquette</a></li>
+        <li><a href="#telechargements" class="hover:text-brand-gold">Téléchargements</a></li>
+        <li><a href="#contact" class="hover:text-brand-gold">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10">
+      <ul class="px-4 py-3 space-y-2 text-sm">
+        <li><a href="#produit" class="block py-1">Produit</a></li>
+        <li><a href="#normes" class="block py-1">Normes</a></li>
+        <li><a href="#comparatif" class="block py-1">Comparatif</a></li>
+        <li><a href="#etiquette" class="block py-1">Étiquette</a></li>
+        <li><a href="#telechargements" class="block py-1">Téléchargements</a></li>
+        <li><a href="#contact" class="block py-1">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-red/20 to-transparent pointer-events-none"></div>
+    <div class="max-w-6xl mx-auto px-4 py-20 lg:py-28 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="fade-in">
+        <span class="badge">Île de La Réunion</span>
+        <h1 class="mt-4 text-4xl lg:text-5xl font-extrabold leading-tight">
+          Briquettes de bagasse <span class="gold-gradient">premium</span>
+        </h1>
+        <p class="mt-4 text-neutral-300 max-w-prose">Alternative locale au charbon de bois : <b>longue combustion</b>, <b>faible fumée</b>, <b>zéro déforestation</b>. Conformes <b>EN 1860‑2</b> & <b>ISO 17225‑6</b>.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#telechargements" class="px-5 py-3 rounded-xl bg-brand-red hover:bg-brand-red/90 font-medium">Télécharger le dossier</a>
+          <a href="#contact" class="px-5 py-3 rounded-xl border border-white/20 hover:bg-white/10">Nous contacter</a>
+        </div>
+        <ul class="mt-6 text-sm text-neutral-400 list-disc ml-5 space-y-1">
+          <li>Formes : hexagonale trouée & cube</li>
+          <li>Durée : 50–90 min par briquette</li>
+          <li>PCI : 16–18 MJ/kg • Cendres : 3–6 %</li>
+        </ul>
+      </div>
+      <div class="fade-in">
+        <div class="card p-6">
+          <img src="images/hero-briquettes.jpg" alt="Briquettes Dofé Dan Ker" class="rounded-xl"/>
+          <p class="text-xs text-neutral-400 mt-3">Visuel d’illustration – Remplacer l’image par vos propres photos produit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produit -->
+  <section id="produit" class="py-16 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Le produit</h2>
+      <p class="text-neutral-300 mt-2 max-w-3xl">Deux formes complémentaires pour une performance optimale : l’<b>hexagonale trouée</b> (tirage & allumage rapide) et le <b>cube</b> (tenue longue et braises stables).</p>
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        <div class="card p-6">
+          <h3 class="font-semibold">Hexagonale trouée</h3>
+          <ul class="mt-3 text-sm text-neutral-300 space-y-1">
+            <li>60 mm plat/plat • trou Ø12 • h 55 mm</li>
+            <li>Combustion utile : 50–80 min</li>
+            <li>Jeu piston contrôlé, dépouille 1–2°</li>
+          </ul>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold">Cube</h3>
+          <ul class="mt-3 text-sm text-neutral-300 space-y-1">
+            <li>50×50×50 mm</li>
+            <li>Combustion utile : 60–90 min</li>
+            <li>Braises durables, faible fumée</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="card p-6">
+          <span class="badge">Écologie</span>
+          <p class="mt-2 text-neutral-300">Valorisation de la bagasse locale – zéro déforestation, faible empreinte carbone.</p>
+        </div>
+        <div class="card p-6">
+          <span class="badge">Qualité</span>
+          <p class="mt-2 text-neutral-300">Densité 0,95–1,0 g/cm³, cendres 3–6 %, durabilité ≥ 97 %.</p>
+        </div>
+        <div class="card p-6">
+          <span class="badge">Usage</span>
+          <p class="mt-2 text-neutral-300">Sacs 5–10 kg. Allumage facile, braises de 2–3 h en mélange 60/40.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Normes -->
+  <section id="normes" class="py-16 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Normes & conformité</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="card p-6">
+          <h3 class="font-semibold">EN 1860‑2 (barbecue)</h3>
+          <ul class="mt-2 text-sm text-neutral-300 list-disc ml-5 space-y-1">
+            <li>Humidité ≤ 8 % • Cendres ≤ 8 %</li>
+            <li>Pas d’additifs toxiques</li>
+            <li>Étiquetage & sécurité</li>
+          </ul>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold">ISO 17225‑6 (biocombustibles)</h3>
+          <ul class="mt-2 text-sm text-neutral-300 list-disc ml-5 space-y-1">
+            <li>PCI mesuré • Densité ≥ 0,9 g/cm³</li>
+            <li>Durabilité ≥ 95 %</li>
+            <li>Traçabilité & classes qualité</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparatif -->
+  <section id="comparatif" class="py-16 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Briquettes vs Charbon</h2>
+      <div class="overflow-x-auto mt-6">
+        <table class="min-w-full text-sm">
+          <thead>
+            <tr class="text-left text-neutral-300">
+              <th class="py-2 pr-6">Critère</th>
+              <th class="py-2 pr-6">Briquettes</th>
+              <th class="py-2 pr-6">Charbon</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/10">
+            <tr>
+              <td class="py-3 pr-6">PCI (MJ/kg)</td>
+              <td class="py-3 pr-6">16–18</td>
+              <td class="py-3 pr-6">28–30</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-6">Cendres (%)</td>
+              <td class="py-3 pr-6">3–6</td>
+              <td class="py-3 pr-6">10–15</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-6">Impact forêt</td>
+              <td class="py-3 pr-6">Zéro déforestation</td>
+              <td class="py-3 pr-6">Déforestation</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-6">Stabilité</td>
+              <td class="py-3 pr-6">Formes standardisées</td>
+              <td class="py-3 pr-6">Morceaux hétérogènes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-neutral-400 mt-3">Équivalence énergétique indicative : 1 kg charbon ≈ 1,7 kg briquettes.</p>
+    </div>
+  </section>
+
+  <!-- Étiquette -->
+  <section id="etiquette" class="py-16 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Étiquette & branding</h2>
+      <div class="grid md:grid-cols-2 gap-6 mt-6 items-center">
+        <div class="card p-6">
+          <img src="images/etiquette-a5.jpg" alt="Maquette étiquette A5" class="rounded-xl"/>
+          <p class="text-xs text-neutral-400 mt-2">Maquette premium fond noir (A5). Remplacer par votre PDF exporté.</p>
+        </div>
+        <ul class="text-neutral-300 text-sm space-y-2">
+          <li>Mentions obligatoires (composition, poids, sécurité, coordonnées).</li>
+          <li>Pictogrammes sécurité (usage extérieur, etc.).</li>
+          <li>Couleurs : noir / doré / rouge (cohérence marque).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Téléchargements -->
+  <section id="telechargements" class="py-16 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Téléchargements</h2>
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
+        <a class="card p-6 hover:bg-white/10" href="docs/Rapport_faisabilite_DofeDanKer_Complet.pdf" target="_blank" rel="noopener">
+          <h3 class="font-semibold">Rapport de faisabilité (PDF)</h3>
+          <p class="text-sm text-neutral-300 mt-1">Version complète avec annexes, schémas et figures.</p>
+        </a>
+        <a class="card p-6 hover:bg-white/10" href="docs/etiquette_briquettes_premium_A5.pdf" target="_blank" rel="noopener">
+          <h3 class="font-semibold">Étiquette A5 (PDF)</h3>
+          <p class="text-sm text-neutral-300 mt-1">Maquette premium prête pour impression.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="text-neutral-300 mt-2">Parlez-nous de votre besoin (distribution, restauration, partenariat sucrerie).</p>
+      <form class="mt-6 grid md:grid-cols-2 gap-4" onsubmit="sendMail(event)">
+        <input class="card p-3" type="text" id="name" placeholder="Nom" required />
+        <input class="card p-3" type="email" id="email" placeholder="Email" required />
+        <input class="card p-3 md:col-span-2" type="text" id="subject" placeholder="Sujet" />
+        <textarea class="card p-3 md:col-span-2" id="message" rows="5" placeholder="Message"></textarea>
+        <button class="px-5 py-3 rounded-xl bg-brand-gold text-black font-semibold hover:brightness-110 w-max">Envoyer</button>
+      </form>
+      <p class="text-xs text-neutral-500 mt-3">En appuyant sur « Envoyer », un brouillon d’email s’ouvrira dans votre logiciel de messagerie.</p>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10 py-8">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-neutral-400 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <p>© <span id="year"></span> Dofé Dan Ker – Île de La Réunion</p>
+      <div class="flex items-center gap-4">
+        <a href="#top" class="hover:text-brand-gold">Haut de page</a>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="hover:text-brand-gold">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const navBtn = document.getElementById('navBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navLinks = document.getElementById('navLinks');
+    navBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Mailto sender
+    function sendMail(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value || 'Contact site Dofé Dan Ker';
+      const message = document.getElementById('message').value;
+      const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:contact@dofedanker.fr?subject=${encodeURIComponent(subject)}&body=${body}`;
+    }
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
